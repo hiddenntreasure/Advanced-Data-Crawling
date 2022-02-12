@@ -20,3 +20,6 @@ First of all, I have used **warcio** library to iterate over the records of each
 
 ## Limitations:
 In this section, I will discuss both approaches limitation as well as mine.
+- Due to the huge size of each month archives, it is difficult to understand the data more clearly. But, I assumed that each file in the WARC contains a html with its infomation such as link.
+- I don't have any previous idea about common-crawl. Moreover, there are very few articles related to it. Even it tooks one whole day to create the programming environment. However, the work goes in vain, i had to work in the regular colab platform where i have to run same code specially for warcio related multiple even sometimes crash.
+- 
