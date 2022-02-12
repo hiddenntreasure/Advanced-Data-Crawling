@@ -8,7 +8,10 @@ First of all, I have used **warcio** library to iterate over the records of each
     - **warcio** : warcio to fetch file and iterate over the files
     - **sentence-transformers** : to compute dense vector representations for sentences, paragraphs in short for embedding.
     - **BeautifulSoup and PorterStemmer** : for cleanning of the data
-  - 
+  - I used a comparison between ![wikipedia's article](https://en.wikipedia.org/wiki/Economic_impact_of_the_COVID-19_pandemic) and all the html formated data. Basically, i spilt the wikipedia's article by topic like impact on business, sport, regions. If you go through the article you will get an idea. Even i compared the whole wikipedia's artilce with each data from monthly archives. However, i get the best result for topic base comparison of the articles.
+  - Firs of all, I cleaned both the data of wikipedia's article and the each feteched data.
+  - Then convert the data into vector that's mean embedded the data by using **sentence_transformer**. There are pre-trained model for embedding as shown in the below picture: ![Models along with the performance](https://miro.medium.com/max/1154/1*P2zYNp3-nR28zraavajMyA.png)
+  -
 
 
 
