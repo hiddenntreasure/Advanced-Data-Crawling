@@ -1,8 +1,8 @@
 # Advanced Data Crawling
 ## Approaches:
 First of all, I have used **warcio** library to iterate over the records of each archives. I have used several approaches to fetch data regarding *economic impact of covid 19*. I have run the code on colab platfrom. It is quite fast in fetching data from archives.
-1. Initially, I tried to search the Query by keyword in the title of each record. But it produced very few data regarding the topic.
-2. Then, I tried to find query by keyword in the whole data of each record. But, almost all website has a navigation bar for covid or economic as well as there are suggested/external links. However, I tried to go for weight based approaches (the number of times covid or economic or its synonym appears). This approach also failed as few website repeated the keyword for other reasons. 
+1. Initially, I tried to search the Query by keyword in the title of each record. But it produced very few link regarding the topic.
+2. Then, I tried to find query by keyword in the whole data of each record. But, almost all website has a navigation bar for covid or economy as well as there are suggested/external links. However, I tried to go for weight based approaches (the number of times covid or economic or its synonym appears). This approach also failed as few website repeated the keyword for other reasons. 
 3. At last, I tried Natural Language Processing based approaches called document/sentence similarity. To measure similarity, cosine similarity is used as a metric. The approach is stated below:
   - Install packages:
     - **warcio** : to fetch file and iterate over the records
@@ -14,6 +14,7 @@ First of all, I have used **warcio** library to iterate over the records of each
 ![Models along with the performance](https://miro.medium.com/max/1154/1*P2zYNp3-nR28zraavajMyA.png)
   - In this study, I have used cosine similarity as a metric. The threshold value was 0.75.
   - I have compared each wikipedia's topic (44 topic) with the iterated record. So, there are 44 similarity index, but i took the similarity index which is greater than 0.75 and maximum among all.
+  - Each record in the WARC file contains a link in the header. If the similarity index is greater than 0.75 and maximum among all, we have print the website's link by indicating the header ('WARC-Target-URI').
   
 ## Performance of NLP based approach:
 - It can correctly detect website which is related economy.
