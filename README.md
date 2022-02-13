@@ -27,6 +27,7 @@ In this section, I will discuss all the approaches limitation as well as mine.
 - Searching keyword in each file's title produced very few output. I assumed there are very few articles which title is related to the query.
 - Html record contains external links, drop down menu and navigation bar along with the main article. So, searching by keyword was a bad idea.
 - Colab system crash after sometimes due to bigger size of the file. Thats why i couldn't run through all 2020 archives.
+- I didn't go for downloading the archives or parallel reading as I only focused on the context learing and similarity.
 
 ## References:
 1. https://towardsdatascience.com/semantic-similarity-using-transformers-8f3cb5bf66d6
