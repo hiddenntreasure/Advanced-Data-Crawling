@@ -27,4 +27,9 @@ In this section, I will discuss all the approaches limitation as well as mine.
 - Html record contains external links, drop down menu and navigation bar along with the main article. So, searching by keyword was a bad idea.
 - Colab system crash after sometimes due to bigger size of the file. Thats why i couldn't run through all 2020 archives.
 
-#https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#referencing-issues-and-pull-requests
+## References:
+1. https://towardsdatascience.com/semantic-similarity-using-transformers-8f3cb5bf66d6
+2. https://towardsdatascience.com/calculating-document-similarities-using-bert-and-other-models-b2c1a29c9630
+3. https://www.irjet.net/archives/V8/i4/IRJET-V8I4927.pdf
+4. https://towardsdatascience.com/cutting-edge-semantic-search-and-sentence-similarity-53380328c655
+5. https://www.analyticsvidhya.com/blog/2020/08/top-4-sentence-embedding-techniques-using-python/
